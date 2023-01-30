@@ -1,6 +1,9 @@
 {
     "name": "lfeabreu/alura-buscador-cursos",
     "autoload": {
+        "files": [
+            "functions.php"
+        ],
         "psr-4": {
             "Lfeabreu\\BuscadorDeCursos\\": "src/"
         }
@@ -41,5 +44,8 @@
         "cs": "Verify code with PHP_CodeSniffer.",
         "phan": "Verify code with PHAN.",
         "check": "Execute all code verifications: PHAN, PHP_CodeSniffer and PHP Unit."
-    }
+    },
+
+    "license": "GPL-3.0",
+    "bin": ["buscar-cursos.php"]
 }
