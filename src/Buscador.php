@@ -1,13 +1,12 @@
 <?php
 
-namespace Alura\BuscadorDeCursos;
+namespace Lfeabreu\BuscadorDeCursos;
 
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
 class Buscador
 {
-
     /**
      * @var ClientInterface
      */
@@ -21,7 +20,6 @@ class Buscador
     {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
-
     }
 
     public function buscar(string $url): array
